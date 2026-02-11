@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
 <head>
-    <meta charset=""UTF-8">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
     <title> My Website - About</title>
 </head>
 <body>
-    <h1>Carl A. Sharpe</h1>
-    <p>I am a second year student at the University of The West Indies persuing a BSc. in Information Technology aspiring to pursue a career in cyber security. Hoping to use the knowledge and skills gained to make a positive impact in the field.</p>
-    <p>In my free time, I enjoy playing video games, reading science fiction novels, and exploring new technologies. I am passionate about learning and constantly seek to expand my knowledge in various areas of interest.</p>
-
+    <div class="container center-content">
+        <h1>Carl A. Sharpe</h1>
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-pic">
+        <p>I am a second year student at the University of The West Indies persuing a BSc. in Information Technology aspiring to pursue a career in cyber security. Hoping to use the knowledge and skills gained to make a positive impact in the field.</p>
+        <p>In my free time, I enjoy playing video games, reading science fiction novels, and exploring new technologies. I am passionate about learning and constantly seek to expand my knowledge in various areas of interest.</p>
+    </div>
 </body>
-</html>>
+</html>
 
