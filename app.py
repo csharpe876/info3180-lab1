@@ -8,10 +8,12 @@ app = Flask(__name__)
 '''
 @app.route('/')
 def home():
+    """Custom home page."""
     return 'My home page'
 
 @app.route('/about')
 def about():
+    """Custom about page."""
     return render_template('about.html')
 
 
